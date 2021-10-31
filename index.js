@@ -11,9 +11,9 @@ let req = HTTPS.request(options, res => {
         i++;
         if (i < 2) {
             if (toString(data).search("Service Disruption")) {
-                console.log(true)
+                console.log("YES, Roblox may be experiencing major issues.")
             } else {
-                console.log(false)
+                console.log("NO, Roblox is not experiencing any major issues.")
             }
         }
     })
